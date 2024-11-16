@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,116 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+/* Landing Page */
+.landing-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #ADB2F0 100%);
+}
+
+/* IMG_1738 1 */
+.img-1738 {
+  position: absolute;
+  width: 1149px;
+  height: 764px;
+  left: 15px;
+  top: 113px;
+  background: url(.png);
+}
+
+/* Spotify Aura */
+.spotify-aura {
+  position: absolute;
+  width: 971px;
+  height: 143px;
+  left: 695px;
+  top: 553px;
+  font-family: 'Brown Sugar';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 150px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+/* What’s your aura? */
+.whats-your-aura {
+  position: absolute;
+  width: 888px;
+  height: 217px;
+  left: 1017px;
+  top: 386px;
+  font-family: 'Antic Didone';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+/* Rectangle 3 */
+.rectangle-3 {
+  position: absolute;
+  width: 401.64px;
+  height: 144px;
+  left: 759px;
+  top: 733px;
+  background: #1DB954;
+  border-radius: 100.627px;
+}
+
+/* Rectangle 4 */
+.rectangle-4 {
+  position: absolute;
+  width: 401.64px;
+  height: 144px;
+  left: 1260px;
+  top: 733px;
+  background: #EAEDFF;
+  border-radius: 100.627px;
+}
+
+/* Connect Spotify */
+.connect-spotify {
+  position: absolute;
+  width: 328px;
+  height: 117.6px;
+  left: 796px;
+  top: 746px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35.4212px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Create Song List */
+.create-song-list {
+  position: absolute;
+  width: 328px;
+  height: 117.6px;
+  left: 1297px;
+  top: 746px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35.4212px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ADB2F0;
 }
