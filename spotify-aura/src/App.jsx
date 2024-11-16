@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='landing-page'>
       <img
-        className='background-image'
+        className='img-1738'
         src="src/assets/img-17381.png"
         alt="Background"
       />
@@ -17,7 +17,7 @@ function App() {
       </header>
       <main>
         <button className='connect-spotify'>Connect Spotify</button>
-        <button className='create-song-list'>Create Song List</button>
+        {/* <button className='create-song-list'>Create Song List</button> */}
       </main>
     </div>
   )
