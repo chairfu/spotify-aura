@@ -10,7 +10,7 @@
 .img-1738 {
   position: absolute;
   width: 1149px;
-  height: 764px;
+  height: auto;
   left: 15px;
   top: 113px;
   bottom: 203px;
@@ -21,10 +21,8 @@
 .spotify-aura {
   position: absolute;
   width: 971px;
-  /* height: 384px; */
   left: 695px;
   right: 254px;
-  top: 553px;
   bottom: 384px;
   font-family: 'Brown Sugar';
   font-style: normal;
@@ -42,8 +40,8 @@
   position: absolute;
   width: 888px;
   height: 217px;
-  left: 1017px;
-  top: 386px;
+  left: 1027px;
+  top: 326px;
   font-family: 'Antic Didone';
   font-style: normal;
   font-weight: 400;
@@ -95,9 +93,22 @@
   color: #FFFFFF;
 }
 
-.connect-spotify {
+/* .connect-spotify {
   left: 759px;
-  top: 733px;
+  top: 625px;
+  background: #1DB954;
+  color: #FFFFFF;
+  border-radius: 100.627px;
+  border: none;
+} 
+*/
+
+
+/* if its the only button */
+
+.connect-spotify {
+  left: 1340px;
+  top: 625px;
   background: #1DB954;
   color: #FFFFFF;
   border-radius: 100.627px;
@@ -124,7 +135,7 @@
 /* create song list button */
 .create-song-list {
   left: 1260px;
-  top: 733px;
+  top: 625px;
   background: #EAEDFF;
   color: #ADB2F0;
   border-radius: 100.627px;
