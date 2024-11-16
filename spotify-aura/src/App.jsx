@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Button from './components/button'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,7 @@ function App() {
         <h2 className='whats-your-aura'>What's your aura?</h2>
       </header>
       <main>
-        <button className='connect-spotify'>Connect Spotify</button>
+        <Button />
         {/* <button className='create-song-list'>Create Song List</button> */}
       </main>
     </div>

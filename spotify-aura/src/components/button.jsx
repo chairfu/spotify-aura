@@ -8,8 +8,7 @@ function Button(){
     
       return (
         <div>
-          <h1>Spotify Authorization</h1>
-          <button onClick={handleLogin}>Log in with Spotify</button>
+          <button className='connect-spotify' onClick={handleLogin}>Connect Spotify</button>
         </div>
       );
 }
