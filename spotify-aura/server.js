@@ -26,7 +26,7 @@ app.use(express.static(path.resolve('dist')));
 // Step 1: Redirect to Spotify Authorization Page
 app.get('/api/login', (req, res) => {
   const queryParams = querystring.stringify({
-    client_id: '23007b19701f4535906a202c2143a389',
+    client_id: '9c93acc23ff640dabf9154f9db451e75',
     response_type: 'code',
     redirect_uri: 'http://localhost:5173/callback',
     scope: scopes.join(' '),
@@ -51,8 +51,8 @@ app.get('/callback', async (req, res) => {
         grant_type: 'authorization_code',
         code,
         redirect_uri: 'http://localhost:5173/callback',
-        client_id: '23007b19701f4535906a202c2143a389',
-        client_secret: 'b58bad3def8848ba869de642f2e0455c',
+        client_id: '9c93acc23ff640dabf9154f9db451e75',
+        client_secret: 'e556bde3378e45c090967eac7f35a637',
       }),
       {
         headers: {
@@ -103,6 +103,7 @@ app.get('/api/top-artists', async (req, res) => {
 
     if (genre) {
       res.json(genre); // Return the genre as a response
+      console.log(genre);
     } else {
       res.status(404).json({ error: 'Genre not found for the top artist' });
     }

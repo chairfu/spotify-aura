@@ -24,9 +24,9 @@ function Home() {
   return (
     <div className='landing-page'>
       <img
-        className='img-1738'
+        className='img-17381'
         src="src/assets/img-17381.png"
-        alt="Background"
+        alt="Background Star Image"
       />
       <header>
         <h1 className='spotify-aura'>Spotify Aura</h1>
