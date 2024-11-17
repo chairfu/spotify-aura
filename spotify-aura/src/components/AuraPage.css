@@ -33,9 +33,9 @@
   
   /* Styles for text elements */
   .SpotifyAura,
-  .Indie,
+  .Genre1,
   .TopSong,
-  .Alternative {
+  .Genre2 {
     position: absolute;
     text-align: center;
     color: black;
@@ -46,29 +46,31 @@
   
   /* Spotify Aura text */
   .SpotifyAura {
-    font-size: 5vw; /* Scalable font size */
+    font-size: 3vw; /* Scalable font size */
     left: 10%; /* Adjusted positioning */
     top: 10%;
   }
   
-  /* Indie text */
-  .Indie {
+  /* Top Song text */
+  .TopSong {
+    font-size: 30px; /* Scalable font size */
+    /* left: 50%; */
+    top: 30%;
+    /* transform: translateX(-50%); */
+  }
+
+
+
+  .Genre1 {
     font-size: 2.5;
     position: absolute;
     bottom: 30px;
     left: 1600px; /* Positioned towards the right */
-  }
-  
-  /* Top Song text */
-  .TopSong {
-    font-size: 2.5; /* Scalable font size */
-    left: 50%;
-    top: 30%;
     /* transform: translateX(-50%); */
   }
   
   /* Alternative text */
-  .Alternative {
+  .Genre2 {
     font-size: 2.5;
     position: absolute;
     bottom: 10px;
@@ -78,7 +80,7 @@
   
   /* SongData container */
   .SongData {
-    width: 80%;
+    width: auto;
     height: auto; /* Adjust height for content */
     max-width: 320px; /* Max width */
     position: absolute;
@@ -93,9 +95,9 @@
   }
   
   /* Text inside the SongData container */
-  .NoOneNoticed,
-  .TheMarAs,
-  .Submarine,
+  .SongName,
+  .Artist,
+  .AlbumName,
   .Duration,
   .Year {
     position: relative;
