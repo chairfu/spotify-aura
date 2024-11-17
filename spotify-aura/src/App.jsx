@@ -2,9 +2,24 @@ import { useState } from 'react'
 import './App.css'
 import Button from './components/button'
 import AuraPage from './components/AuraPage'
+import Dashboard from './components/Dashboard';
+import Callback from './components/Callback';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/api/callback" element={<Callback />}/>
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </Router>
+  );
+}
+
+function Home() {
 
   return (
     <div className='landing-page'>

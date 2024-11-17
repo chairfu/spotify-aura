@@ -3,7 +3,7 @@ import React from "react";
 function Button(){
     const handleLogin = () => {
         // Redirect to your server's /login endpoint
-        window.location.href = 'http://localhost:5173/login';
+        window.location.href = 'http://localhost:5173/api/login';
       };
     
       return (
