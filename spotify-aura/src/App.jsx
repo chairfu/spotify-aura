@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Button from './components/button'
+import AuraPage from './components/AuraPage'
 
 function App() {
   const [count, setCount] = useState(0)

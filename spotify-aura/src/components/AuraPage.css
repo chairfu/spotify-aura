@@ -1,0 +1,131 @@
+/* Landing Page */
+.aura-page {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #adb2f0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Styles for the container ViewNowAura */
+  .ViewNowAura {
+    width: 90%; /* To make it responsive */
+    height: 90%;
+    position: relative;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Styles for the Img17381 image */
+  .Img17381 {
+    width: 241px;
+    height: 191px;
+    position: absolute;
+    left: 6px;
+    top: -1px;
+  }
+  
+  /* Styles for text elements */
+  .SpotifyAura,
+  .Indie,
+  .TopSong,
+  .Alternative {
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-family: 'Brown Sugar', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  /* Spotify Aura text */
+  .SpotifyAura {
+    font-size: 5vw; /* Scalable font size */
+    left: 10%; /* Adjusted positioning */
+    top: 10%;
+  }
+  
+  /* Indie text */
+  .Indie {
+    font-size: 2.5;
+    position: absolute;
+    bottom: 30px;
+    left: 1600px; /* Positioned towards the right */
+  }
+  
+  /* Top Song text */
+  .TopSong {
+    font-size: 2.5; /* Scalable font size */
+    left: 50%;
+    top: 30%;
+    /* transform: translateX(-50%); */
+  }
+  
+  /* Alternative text */
+  .Alternative {
+    font-size: 2.5;
+    position: absolute;
+    bottom: 10px;
+    left: 1600px; /* Positioned towards the right */
+    /* transform: translateX(-50%); */
+  }
+  
+  /* SongData container */
+  .SongData {
+    width: 80%;
+    height: auto; /* Adjust height for content */
+    max-width: 320px; /* Max width */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    border-radius: 9.13px;
+    overflow: hidden;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text inside the SongData container */
+  .NoOneNoticed,
+  .TheMarAs,
+  .Submarine,
+  .Duration,
+  .Year {
+    position: relative;
+    color: black;
+    font-family: 'Antic Didone', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 5px; /* Space between lines */
+  }
+  
+  /* Specific styles for each text element in SongData */
+  .NoOneNoticed {
+    font-size: 1.2rem; /* Scalable font size */
+  }
+  
+  .TheMarAs {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+  
+  .Submarine {
+    font-size: 0.9rem;
+  }
+  
+  .Duration {
+    font-size: 0.9rem;
+  }
+  
+  .Year {
+    font-size: 0.9rem;
+  }
+  
+  /* Rectangle2 Image */
+  
