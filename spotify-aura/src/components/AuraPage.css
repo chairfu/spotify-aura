@@ -3,7 +3,7 @@
     position: relative;
     width: 1920px;
     height: 1080px;
-    background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #adb2f0 100%);
+    /* background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #adb2f0 100%); */
     display: flex;
     justify-content: center;
     align-items: center;

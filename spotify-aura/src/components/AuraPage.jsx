@@ -1,9 +1,9 @@
 import React from 'react';
 import './AuraPage.css';
 
-function AuraPage() {
+function AuraPage({color2}) {
     return (
-        <div className="aura-page">
+        <div className="aura-page" style={{background: `radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, ${color2} 100%)`}}>
           <div className="ViewNowAura">
             <img 
               className="Img17381" 

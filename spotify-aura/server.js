@@ -17,6 +17,7 @@ const scopes = [
   'user-read-private',
   'playlist-read-private',
   'user-library-read',
+  'user-top-read',
 ];
 
 app.use(express.static(path.resolve('dist')));
@@ -84,6 +85,33 @@ app.get('/dashboard', (req, res) => {
 
 });
 
+app.get('/api/top-artists', async (req, res) => {
+  const accessToken = req.query.access_token; // Assume the token is passed as a query param
+
+  try {
+    const response = await axios.get('https://api.spotify.com/v1/me/top/artists', {
+      headers: {
+        'Authorization': `Bearer ${accessToken}`
+      },
+      params: {
+        limit: 1,
+        offset: 0
+      }
+    });
+
+    const genre = response.data.items[0].genres[0];
+
+    if (genre) {
+      res.json(genre); // Return the genre as a response
+    } else {
+      res.status(404).json({ error: 'Genre not found for the top artist' });
+    }
+
+  } catch (error) {
+    console.error('Error fetching top artists:', error);
+    res.status(500).json({ error: 'Failed to fetch top artists' });
+  }
+});
 
   
   app.get('*', (req, res) => {

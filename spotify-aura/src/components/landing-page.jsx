@@ -6,7 +6,8 @@ import Button from "./button";
 const genres = new Map([
 
     ["Indie", "#81b14f"],
-    ["Rock",  "#c4bd8b"]
+    ["Rock",  "#c4bd8b"],
+    ["Pixel", "#9f543e"],
   
   ])
 
