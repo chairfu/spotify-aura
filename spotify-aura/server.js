@@ -67,21 +67,21 @@ app.get('/callback', async (req, res) => {
     console.error(error.message);
     res.status(500).send('Token exchange failed.');
   }
+
+  
+
 });
 
 app.get('/dashboard', (req, res) => {
   const { access_token } = req.query;
 
   if (!access_token) {
+    console.log('Loading');
     return res.redirect('/login');
   }
 
-  res.send(`
-    <h1>Dashboard</h1>
-    <p>Welcome! You are successfully logged in.</p>
-    <p>Access Token: ${access_token}</p>
-    <a href="/logout">Logout</a>
-  `);
+  res.sendFile(path.resolve('dist', 'index.html'));
+
 });
 
 
