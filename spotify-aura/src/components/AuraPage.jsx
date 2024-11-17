@@ -11,13 +11,13 @@ function AuraPage({color2}) {
               alt="Example Image"
             />
             <div className="SpotifyAura">Spotify Aura</div>
-            <div className="Alternative">Alternative</div>
-            <div className="Indie">Indie</div>
+            <div className="Genre1">Indie</div>
+            <div className="Genre2">Alternative</div>
             <div className="TopSong">Top Song</div>
             <div className="SongData">
-              <div className="NoOneNoticed">No One Noticed</div>
-              <div className="TheMarAs">The Marías</div>
-              <div className="Submarine">Submarine</div>
+              <div className="SongName">No One Noticed</div>
+              <div className="Artist">The Marías</div>
+              <div className="AlbumName">Submarine</div>
               <div className="Duration">3:57</div>
               <div className="Year">2024</div>
               <img 
